@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/USERNAME/devops-project.git'
+                git 'https://github.com/Gauri9498/docjenproject.git'
             }
         }
 
@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run New Container') {
             steps {
-                sh 'docker run -d -p 80:80 --name website my-website'
+                sh 'docker run -d -p 8081:80 --name website my-website'
             }
         }
     }
